@@ -1,0 +1,4 @@
+{
+  "allowedVaultRoots": ["REPLACE_WITH_ABSOLUTE_PATH_TO/knowledge-vault"],
+  "note": "Obsidian MCP must not access the portfolio, parent workspace, or source project repositories."
+}

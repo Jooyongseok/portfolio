@@ -1,0 +1,56 @@
+{
+  "profile": {
+    "nameKo": "주용석", "nameEn": "Jooyongseok",
+    "statementKo": "현실의 데이터를 이해하는 AI를 연구합니다",
+    "introductionKo": "데이터과학, 생성형 AI, 바이오 데이터 경험을 바탕으로 현실의 신호를 이해하고 행동으로 연결하는 Physical AI와 멀티모달 지능을 탐구합니다.",
+    "universityKo": "수원대학교", "universityEn": "Suwon University",
+    "majorKo": "데이터과학부", "majorEn": "Department of Data Science",
+    "gpa": "4.31 / 4.50", "expectedKo": "2027년 2월", "expectedEn": "Expected February 2027",
+    "email": "ja020730ha@gmail.com", "phone": "010-2370-5939", "github": "https://github.com/Jooyongseok"
+  },
+  "researchInterests": [
+    { "title": "Physical AI", "summaryKo": "현실의 신호와 환경 상태를 연결하는 지능", "summaryEn": "Connecting real-world signals and environmental states" },
+    { "title": "AI × Bio", "summaryKo": "유전자 발현·세포 이미지 데이터 모델링", "summaryEn": "Modeling gene-expression and cellular image data" },
+    { "title": "Multimodal Intelligence", "summaryKo": "시각·텍스트·구조화 데이터 기반 추론", "summaryEn": "Reasoning across visual, text, and structured data" }
+  ],
+  "selectedEvidence": [
+    {
+      "kind": "Research", "period": "2025.09–2026.09",
+      "titleKo": "성균관대학교 양자생명물리과학원(IQB) · Hard Science 인턴",
+      "titleEn": "Institute of Quantum Biophysics (IQB), Sungkyunkwan University · Hard Science AI Research Intern",
+      "problemKo": "DNA 데이터 저장과 바이오 이미지 연구를 위한 분석·데이터 기반이 필요했습니다.",
+      "contributionKo": "3D 뇌세포 이미지(Organoid) 모델링과 데이터 파이프라인을 구축하고, AI 기반 기사 관리 업무를 자동화했습니다.",
+      "resultKo": "R&D 분석과 최신 AI 연구의 내부 적용을 지원했습니다.",
+      "bulletsEn": ["Supported R&D analysis for DNA data-storage research and related technical reviews.", "Built a modeling and data pipeline for 3D brain-cell (organoid) imagery.", "Developed AI-assisted automation for internal article-management workflows.", "Researched current AI methods and supported their internal application."]
+    },
+    {
+      "kind": "Competition", "period": "2024", "titleKo": "ACCIDENT @ CVPR · 2nd Place", "titleEn": "ACCIDENT @ CVPR · 2nd Place",
+      "problemKo": "시공간 영상 데이터에서 사고 발생 가능성을 예측해야 했습니다.",
+      "contributionKo": "영상 시공간 데이터를 처리하고 시드 앙상블을 최적화했습니다.", "resultKo": "2nd Place",
+      "contributionEn": "Processed spatiotemporal video data and optimized a seed-ensemble approach for accident prediction.",
+      "href": "https://www.kaggle.com/competitions/accident"
+    },
+    {
+      "kind": "Publication", "period": "2026.06",
+      "titleKo": "유전자 발현 데이터에서 2단계 특성 선택을 통한 TabPFN 기반 암 아형 분류 모델",
+      "titleEn": "TabPFN-based Cancer Subtype Classification through Two-stage Feature Selection in Gene-expression Data",
+      "problemKo": "고차원 유전자 발현 데이터에서 제한된 표본으로 유효한 특성을 찾아야 했습니다.",
+      "contributionKo": "2단계 특성 선택과 TabPFN 기반 분류 접근을 연구했습니다.", "resultKo": "KIISE 논문",
+      "authors": "정유담 · 주용석 · 안홍렬", "venue": "KIISE", "href": "https://www.dbpia.co.kr/journal/articleDetail?nodeId=NODE12929994"
+    }
+  ],
+  "additionalAchievements": [
+    { "titleKo": "한솔데코 시즌2 생성 AI 경진대회", "titleEn": "Hansol Deco Season 2 Generative AI Competition", "result": "Top 10%", "detailKo": "GPT 기반 데이터 증강으로 성능을 개선하고 DPO·PEFT를 적용했습니다.", "detailEn": "Improved performance with GPT-based data augmentation and applied DPO and PEFT.", "href": "https://dacon.io/competitions/official/236216/overview/description" }
+  ],
+  "leadership": {
+    "period": "2024.03–Present", "organizationKo": "Tech-Entrepreneurship (모두의 창업 등)", "organizationEn": "Tech-Entrepreneurship (including Modu-ui Changup)", "role": "Project Lead",
+    "bulletsKo": ["화성시 MARS AI 솔루션 출품과 상용화 기획을 이끌었습니다.", "교내외 창업·데이터 대회에서 총 4회 수상했습니다.", "기술 비즈니스 모델 수립과 프로젝트 관리를 담당했습니다."],
+    "bulletsEn": ["Led product planning and commercialization strategy for the MARS AI solution.", "Earned four awards across university and public entrepreneurship and data competitions.", "Developed technical business models and coordinated project delivery."]
+  },
+  "projects": [
+    { "title": "Oneul", "label": "AI-assisted learning", "summaryKo": "짧은 진단에서 현재 수준에 맞는 학습 흐름으로 이어지는 웹 경험", "summaryEn": "A web learning experience that connects a short diagnostic to a level-appropriate study flow.", "evidenceKo": "React·TypeScript로 구현하고 Vitest, Playwright, Docker 기반 검증 환경을 구성했습니다.", "tags": ["React", "TypeScript", "Playwright"], "href": "https://github.com/Jooyongseok/oneul-dev" },
+    { "title": "KidsArt", "label": "AI image workflow", "summaryKo": "이미지 변환 모델과 결과를 비교하는 창작 실험 워크스페이스", "summaryEn": "A creative workspace for comparing AI image-transformation models and outputs.", "evidenceKo": "React·Vite UI에 Gradio client를 연결하고 Vitest와 Playwright로 흐름을 검증했습니다.", "tags": ["React", "Gradio client", "Playwright"] },
+    { "title": "Acade", "label": "Desktop learning companion", "summaryKo": "학습 상태와 보상 흐름을 로컬에서 다루는 Windows 데스크톱 애플리케이션", "summaryEn": "A Windows desktop companion for local learning-state and reward workflows.", "evidenceKo": "플랫폼 독립 코어, Windows 인프라, WPF UI를 분리하고 테스트 구조를 마련했습니다.", "tags": [".NET", "WPF", "Architecture"] }
+  ],
+  "skills": { "languages": ["Python", "C++", "C#", "TypeScript"], "tools": ["PyTorch", "Hugging Face", "React", "Docker", "Git"] }
+}

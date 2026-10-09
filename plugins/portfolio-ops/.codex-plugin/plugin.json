@@ -1,0 +1,18 @@
+{
+  "name": "portfolio-ops",
+  "version": "0.1.0",
+  "description": "Portfolio Ops plugin",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Portfolio Ops",
+    "shortDescription": "Use Portfolio Ops in Codex.",
+    "longDescription": "Portfolio Ops adds a local Codex plugin scaffold.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Help me use Portfolio Ops."
+  }
+}
