@@ -41,17 +41,17 @@
   ],
   "additionalAchievements": [
     { "titleKo": "한솔데코 시즌2 생성 AI 경진대회", "titleEn": "Hansol Deco Season 2 Generative AI Competition", "result": "Top 10%", "detailKo": "GPT 기반 데이터 증강으로 성능을 개선하고 DPO·PEFT를 적용했습니다.", "detailEn": "Improved performance with GPT-based data augmentation and applied DPO and PEFT.", "href": "https://dacon.io/competitions/official/236216/overview/description" },
-    { "titleKo": "동대문구 빅데이터 경진대회", "titleEn": "Dongdaemun-gu Big Data Competition", "result": "", "detailKo": "", "detailEn": "" },
+    { "titleKo": "동대문구 빅데이터 경진대회", "titleEn": "Dongdaemun-gu Big Data Competition", "result": "장려상", "resultEn": "Encouragement Award", "detailKo": "착한음식거리 추진을 위한 음식점 리뷰 감정 분석을 수행하고, 방문객의 평가를 데이터로 분석한 제안으로 장려상을 수상했습니다.", "detailEn": "Received an Encouragement Award for analyzing sentiment in restaurant reviews to inform the Good Food Street initiative." },
     { "titleKo": "기타 교내 수상", "titleEn": "Additional University Awards", "result": "5회", "resultEn": "5 awards", "detailKo": "교내 대회에서 추가로 5회 수상했습니다.", "detailEn": "Received five additional awards in university competitions." }
   ],
   "leadership": {
     "period": "2024.03–Present", "organizationKo": "Tech-Entrepreneurship (모두의 창업 등)", "organizationEn": "Tech-Entrepreneurship (including Modu-ui Changup)", "role": "Project Lead",
-    "bulletsKo": ["화성시 MARS AI 솔루션 출품과 상용화 기획을 이끌었습니다.", "교내외 창업·데이터 대회에서 총 4회 수상했습니다.", "기술 비즈니스 모델 수립과 프로젝트 관리를 담당했습니다."],
-    "bulletsEn": ["Led product planning and commercialization strategy for the MARS AI solution.", "Earned four awards across university and public entrepreneurship and data competitions.", "Developed technical business models and coordinated project delivery."]
+    "bulletsKo": ["KidsArt로 모두의 창업 2차에 선정되어 현재 프로젝트를 진행하고 있습니다.", "화성시 MARS AI 솔루션 출품과 상용화 기획을 이끌었습니다.", "기술 비즈니스 모델 수립과 프로젝트 관리를 담당했습니다."],
+    "bulletsEn": ["Selected for the second stage of the Modu-ui Changup entrepreneurship program with KidsArt; the project is ongoing.", "Led product planning and commercialization strategy for the MARS AI solution.", "Developed technical business models and coordinated project delivery."]
   },
   "projects": [
-    { "title": "Oneul", "label": "AI-assisted learning", "summaryKo": "짧은 진단에서 현재 수준에 맞는 학습 흐름으로 이어지는 웹 경험", "summaryEn": "A web learning experience that connects a short diagnostic to a level-appropriate study flow.", "evidenceKo": "React·TypeScript로 구현하고 Vitest, Playwright, Docker 기반 검증 환경을 구성했습니다.", "tags": ["React", "TypeScript", "Playwright"], "href": "https://github.com/Jooyongseok/oneul-dev" },
-    { "title": "KidsArt", "label": "AI image workflow", "summaryKo": "이미지 변환 모델과 결과를 비교하는 창작 실험 워크스페이스", "summaryEn": "A creative workspace for comparing AI image-transformation models and outputs.", "evidenceKo": "React·Vite UI에 Gradio client를 연결하고 Vitest와 Playwright로 흐름을 검증했습니다.", "tags": ["React", "Gradio client", "Playwright"] }
+    { "title": "KidsArt", "label": "AI image workflow · Ongoing", "statusKo": "모두의 창업 2차 선정 · 진행 중", "statusEn": "Modu-ui Changup: selected for the second stage · Ongoing", "summaryKo": "AI 이미지 변환을 활용한 창작 프로젝트로, 모두의 창업 2차에 선정되어 현재 개발과 창업 프로그램을 진행하고 있습니다.", "summaryEn": "An AI image-transformation project selected for the second stage of the Modu-ui Changup entrepreneurship program; development and program participation are ongoing.", "evidenceKo": "이미지 변환 모델과 결과를 비교하는 창작 흐름을 구현했습니다. React·Vite UI에 Gradio client를 연결하고 Vitest·Playwright로 주요 흐름을 검증했습니다.", "tags": ["React", "Gradio client", "Playwright"] },
+    { "title": "Oneul", "label": "AI-assisted learning", "summaryKo": "짧은 진단에서 현재 수준에 맞는 학습 흐름으로 이어지는 웹 경험", "summaryEn": "A web learning experience that connects a short diagnostic to a level-appropriate study flow.", "evidenceKo": "React·TypeScript로 구현하고 Vitest, Playwright, Docker 기반 검증 환경을 구성했습니다.", "tags": ["React", "TypeScript", "Playwright"], "href": "https://github.com/Jooyongseok/oneul-dev" }
   ],
   "skills": { "languages": ["Python", "C#"], "tools": ["PyTorch", "Hugging Face", "React", "Docker", "Git", "MariaDB", "Vibe Coding"] }
 }

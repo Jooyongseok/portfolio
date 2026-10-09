@@ -10,7 +10,7 @@ const linkAttrs = 'target="_blank" rel="noreferrer"';
 const interests = researchInterests.map((item) => `<div><h3>${item.title}</h3><p>${item.summaryEn}</p></div>`).join('');
 const researchBullets = research.bulletsEn.map((item) => `<li>${item}</li>`).join('');
 const leadershipBullets = leadership.bulletsEn.map((item) => `<li>${item}</li>`).join('');
-const projectRows = projects.map((project) => `<div class="project"><h3>${project.title}</h3><p>${project.summaryEn}</p></div>`).join('');
+const projectRows = projects.map((project) => `<div class="project"><h3>${project.title}</h3>${project.statusEn ? `<p class="project-status">${project.statusEn}</p>` : ''}<p>${project.summaryEn}</p></div>`).join('');
 const awardRows = additionalAchievements.map((award) => {
   const title = award.href ? `<a href="${award.href}" ${linkAttrs}>${award.titleEn}</a>` : award.titleEn;
   const result = award.resultEn ?? award.result;
@@ -42,6 +42,7 @@ const html = `<!doctype html>
     .cv-main{padding:13mm 13mm 10mm}.cv-header{display:flex;justify-content:space-between;align-items:end;padding-bottom:4mm;border-bottom:.5mm solid var(--navy)}.cv-header h2{font:700 22pt/1 Georgia,serif;letter-spacing:-.04em}.cv-header p{color:var(--blue);font-size:6.8pt;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
     section{display:grid;grid-template-columns:27mm 1fr;gap:7mm;padding:5mm 0;border-bottom:.25mm solid var(--rule)}section>h2{color:var(--blue);font-size:7.1pt;letter-spacing:.1em;text-transform:uppercase}.entry{display:grid;grid-template-columns:28mm 1fr;gap:5mm}.meta{color:var(--muted);font-size:7.2pt}.entry h3{font-size:9.2pt;line-height:1.3}.entry p{margin-top:1mm;color:var(--muted);font-size:7.8pt}.interests{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}.interests>div+div{padding-left:4mm;border-left:.25mm solid var(--rule)}.interests h3{font-size:8.5pt}.interests p{margin-top:1.5mm;color:var(--muted);font-size:7.4pt}.publication-title{font:700 9pt/1.35 Georgia,serif}.authors{margin-top:1.5mm;color:var(--muted);font-size:7.5pt}.entry ul{margin:2mm 0 0;padding-left:4.5mm;color:#42566a;font-size:7.6pt;line-height:1.46}.entry li+li{margin-top:.8mm}
     .award+.award{margin-top:3mm;padding-top:3mm;border-top:.25mm solid var(--rule)}.award strong{font-size:8.7pt}.award p{margin-top:1mm;color:var(--muted);font-size:7.6pt}.projects{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm}.project+.project{padding-left:4mm;border-left:.25mm solid var(--rule)}.project h3{font-size:9pt}.project p{margin-top:1mm;color:var(--muted);font-size:7.3pt}.skills p+p{margin-top:2mm}.skills strong{display:inline-block;width:34mm;color:var(--navy)}
+    .projects{grid-template-columns:1fr;gap:3mm}.project+.project{padding:3mm 0 0;border-left:0;border-top:.25mm solid var(--rule)}.project .project-status{color:var(--blue);font-weight:700}
     @page{size:A4;margin:0}@media print{body{background:#fff}.page{margin:0;box-shadow:none}.page:last-child{break-after:auto}}@media(max-width:800px){.page{width:100%;height:auto;min-height:297mm;margin:0;grid-template-columns:42mm 1fr}.cv-main{padding-inline:8mm}}
   </style>
 </head>

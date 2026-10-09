@@ -15,7 +15,7 @@ export function SoftwareWorkSection() {
         {projects.map((project, index) => (
           <article className="project-row" key={project.title}>
             <p className="project-index">0{index + 1}</p>
-            <div><p className="evidence-kind">{project.label}</p><h3>{project.title}</h3></div>
+            <div><p className="evidence-kind">{project.label}</p><h3>{project.title}</h3>{'statusKo' in project && project.statusKo ? <p className="evidence-kind">{project.statusKo}</p> : null}</div>
             <p className="project-summary">{project.summaryKo}</p>
             <div className="project-proof">
               <p>{project.evidenceKo}</p>
