@@ -8,7 +8,7 @@ export function SoftwareWorkSection() {
           <p className="section-kicker">Selected software projects</p>
           <h2 id="projects-title">연구를 구현으로 확장한 작업</h2>
         </div>
-        <p>03 projects</p>
+        <p>{String(projects.length).padStart(2, '0')} projects</p>
       </div>
 
       <div className="project-list">

@@ -25,7 +25,7 @@ export function ExperienceSection() {
           <p className="supporting-meta">Competition</p>
           <div>
             <p className="evidence-kind">Award</p>
-            <h3><a href={achievement.href} target="_blank" rel="noreferrer">{achievement.titleKo}</a></h3>
+            <h3>{'href' in achievement && achievement.href ? <a href={achievement.href} target="_blank" rel="noreferrer">{achievement.titleKo}</a> : achievement.titleKo}</h3>
           </div>
           <p className="supporting-result"><strong>{achievement.result}</strong>{achievement.detailKo}</p>
         </article>

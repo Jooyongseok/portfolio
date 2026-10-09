@@ -11,6 +11,11 @@ const interests = researchInterests.map((item) => `<div><h3>${item.title}</h3><p
 const researchBullets = research.bulletsEn.map((item) => `<li>${item}</li>`).join('');
 const leadershipBullets = leadership.bulletsEn.map((item) => `<li>${item}</li>`).join('');
 const projectRows = projects.map((project) => `<div class="project"><h3>${project.title}</h3><p>${project.summaryEn}</p></div>`).join('');
+const awardRows = additionalAchievements.map((award) => {
+  const title = award.href ? `<a href="${award.href}" ${linkAttrs}>${award.titleEn}</a>` : award.titleEn;
+  const result = award.resultEn ?? award.result;
+  return `<div class="award"><strong>${title}${result ? ` · ${result}` : ''}</strong>${award.detailEn ? `<p>${award.detailEn}</p>` : ''}</div>`;
+}).join('');
 
 const sidebar = (page) => `
   <aside>
@@ -55,7 +60,7 @@ const html = `<!doctype html>
     ${sidebar(2)}
     <main class="cv-main">
       <header class="cv-header"><h2>${profile.nameEn}</h2><p>Academic Research CV · Page 2</p></header>
-      <section><h2>Awards</h2><div><div class="award"><strong><a href="${competition.href}" ${linkAttrs}>${competition.titleEn}</a></strong><p>${competition.contributionEn}</p></div><div class="award"><strong><a href="${additionalAchievements[0].href}" ${linkAttrs}>${additionalAchievements[0].titleEn} · ${additionalAchievements[0].result}</a></strong><p>${additionalAchievements[0].detailEn}</p></div></div></section>
+      <section><h2>Awards</h2><div><div class="award"><strong><a href="${competition.href}" ${linkAttrs}>${competition.titleEn}</a></strong><p>${competition.contributionEn}</p></div>${awardRows}</div></section>
       <section><h2>Entrepreneurship &amp; Leadership</h2><div class="entry"><p class="meta">${leadership.period}</p><div><h3>${leadership.organizationEn} · ${leadership.role}</h3><ul>${leadershipBullets}</ul></div></div></section>
       <section><h2>Selected Software Projects</h2><div class="projects">${projectRows}</div></section>
       <section><h2>Technical Skills</h2><div class="skills"><p><strong>Languages</strong>${skills.languages.join(', ')}</p><p><strong>Frameworks &amp; Tools</strong>${skills.tools.join(', ')}</p></div></section>
